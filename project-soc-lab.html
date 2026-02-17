@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home SOC Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+  <h1>Home SOC Lab</h1>
+
+  <h2>Objective</h2>
+  <p>
+    Design and implement a functional home SOC environment to simulate real-world
+    security monitoring, log analysis, and threat detection workflows used by SOC analysts.
+  </p>
+
+  <h2>Architecture</h2>
+  <p>
+    Windows Endpoint → Sysmon & Windows Event Logs → Winlogbeat →
+    Elastic SIEM → Kibana Dashboards & Alerts
+  </p>
+
+  <h2>Logs Used</h2>
+  <ul>
+    <li>Windows Security Event Logs (Authentication, Logon/Logoff)</li>
+    <li>Sysmon Process, Network, and File Creation Logs</li>
+  </ul>
+
+  <h2>Detections Implemented</h2>
+  <ul>
+    <li>Brute-force authentication attempts using repeated failed logons</li>
+    <li>Suspicious PowerShell execution and command-line abuse</li>
+    <li>Unusual process behavior based on Sysmon telemetry</li>
+  </ul>
+
+  <h2>Analyst Responsibilities</h2>
+  <ul>
+    <li>Monitor SIEM dashboards and alerts</li>
+    <li>Investigate suspicious events and validate true positives</li>
+    <li>Document incidents and detection logic</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <p>
+    Successfully built a hands-on SOC lab capable of detecting real attack behavior,
+    improving familiarity with SIEM workflows, alert triage, and incident investigation.
+  </p>
+
+  <h2>GitHub Repository</h2>
+  <p>
+    Full lab configuration, documentation, and screenshots are available on GitHub.
+  </p>
+
+  <a href="https://github.com/marawanezzat11-hue/home-soc-lab"
+     target="_blank"
+     class="btn github">
+    View on GitHub
+  </a>
+
+  <br><br>
+
+  <a href="projects.html" class="btn secondary">← Back to Projects</a>
+</section>
+
+</body>
+</html>

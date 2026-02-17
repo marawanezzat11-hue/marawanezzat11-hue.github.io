@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Windows Brute Force Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+  <h1>Windows Brute Force Detection</h1>
+
+  <h3>Objective</h3>
+  <p>
+    Detect and alert on brute-force authentication attempts targeting Windows systems
+    to prevent unauthorized access.
+  </p>
+
+  <h3>Architecture</h3>
+  <p>
+    Windows Security Logs → Winlogbeat → Elastic SIEM → Detection Rules → Alerts
+  </p>
+
+  <h3>Logs Used</h3>
+  <ul>
+    <li>Windows Security Event ID 4625 (Failed Logon)</li>
+    <li>Authentication and Logon Events</li>
+  </ul>
+
+  <h3>Detection Logic</h3>
+  <ul>
+    <li>Multiple failed logins from the same IP within a defined time window</li>
+    <li>High-frequency authentication failures targeting a single user account</li>
+  </ul>
+
+  <h3>MITRE ATT&CK Mapping</h3>
+  <ul>
+    <li>T1110 – Brute Force</li>
+  </ul>
+
+  <h3>Outcome</h3>
+  <p>
+    Enabled real-time detection of brute-force attacks, allowing rapid alerting
+    and escalation before account compromise.
+  </p>
+
+  <h3>GitHub Repository</h3>
+  <a href="https://github.com/marawanezzat11-hue/windows-bruteforce-detection"
+     target="_blank"
+     class="btn github">
+    View on GitHub
+  </a>
+
+  <br><br>
+
+  <a href="projects.html" class="btn secondary">← Back to Projects</a>
+</section>
+
+</body>
+</html>
